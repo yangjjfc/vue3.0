@@ -1,0 +1,79 @@
+// @import './base.scss';
+@import './sidebar.scss';
+@import './element-ui.scss';
+body,div,span,header,footer,nav,section,aside,article,ul,dl,dt,dd,li,a,p,h1,h2,h3,h4,h5,h6,i,b,textarea,button,input,select,figure,figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    &:focus {
+        outline: none;
+    }
+}
+html{
+    line-height: normal;
+    height: 100%;
+}
+
+body {
+    font-size: 12px;
+    color: #2c3e50;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    height: 100%;
+}
+.left,.fl{
+    float: left;
+}
+.right,.fr{
+    float: right;
+}
+.text-success{
+    color: $green;
+}
+.text-danger{
+    color: $red;
+}
+.text-info{
+    color: $info;
+}
+.text-gray{
+    color: gray;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+$width-min-size:100; //最小宽度
+$mg-min-size:5; //最小margin
+
+@for $i from 1 through 20 {
+    .w#{($i - 1)*20+$width-min-size}{
+        width:#{($i - 1)*20+$width-min-size}px ;
+    }
+    .mgl#{($i - 1)*5+$mg-min-size}{
+        margin-left:#{($i - 1)*5+$mg-min-size}px;
+    }
+    .mgr#{($i - 1)*5+$mg-min-size}{
+        margin-right:#{($i - 1)*5+$mg-min-size}px;
+    }
+    .mgb#{($i - 1)*5+$mg-min-size} {
+        margin-bottom:#{($i - 1)*5+$mg-min-size}px;
+    }
+    .mgt#{($i - 1)*5+$mg-min-size} {
+        margin-top:#{($i - 1)*5+$mg-min-size}px;
+    }
+    .pad#{($i - 1)*5+$mg-min-size} {
+        padding:#{($i - 1)*5+$mg-min-size}px;
+    }
+}

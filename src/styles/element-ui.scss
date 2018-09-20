@@ -1,0 +1,40 @@
+.el-table {
+    font-size: 12px;
+    th {
+        background-color: #ecf1f6;
+        padding: 5px 0;
+        .cell {
+            line-height: 26px;
+        }
+    }
+
+}
+.el-table__header th {
+    color: #333;
+}
+
+.el-table__body td {
+    color: #333;
+    padding: 5px 0px;
+}
+
+.el-table .cell {
+    line-height: 20px;
+}
+
+.el-table .el-button--text {
+    color: #2C9CEA;
+    padding: 5px 0px;
+}
+.el-checkbox+.el-checkbox {
+    margin-left: 0;
+}
+.el-checkbox{
+    margin-right: 30px !important;
+    &:nth-last-of-type(1){
+        margin-right: 0;
+    }
+}
+.el-select,.el-input{
+    margin-right: 5px;
+}
